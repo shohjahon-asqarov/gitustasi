@@ -1,0 +1,96 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter, JetBrains_Mono, Source_Serif_4, IBM_Plex_Sans } from "next/font/google"
+import { Suspense } from "react"
+import { ProfessionalBackground } from "@/components/professional-background"
+import "./globals.css"
+
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-sans",
+  display: "swap",
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-mono",
+  display: "swap",
+})
+
+const sourceSerifPro = Source_Serif_4({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-serif",
+  display: "swap",
+})
+
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+})
+
+export const metadata: Metadata = {
+  title: "Git Ustasi - Git'ni professional darajada o'rganing",
+  description:
+    "Git version control tizimini professional darajada o'rganish uchun eng yaxshi platforma. Bepul darslar, amaliyot va resurslar.",
+  keywords: ["git", "uzbek", "o'zbek", "dasturlash", "version control", "github", "shohjahon", "ustasi"],
+  authors: [{ name: "Shohjahon" }],
+  creator: "Shohjahon",
+  publisher: "Git Ustasi by Shohjahon",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://gitustasi.uz"),
+  openGraph: {
+    title: "Git Ustasi - Git'ni professional darajada o'rganing",
+    description:
+      "Git version control tizimini professional darajada o'rganish uchun eng yaxshi platforma. Shohjahon tomonidan yaratilgan.",
+    url: "https://gitustasi.uz",
+    siteName: "Git Ustasi by Shohjahon",
+    locale: "uz_UZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Git Ustasi - Git'ni professional darajada o'rganing",
+    description:
+      "Git version control tizimini professional darajada o'rganish uchun eng yaxshi platforma. Shohjahon tomonidan yaratilgan.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  generator: "Next.js",
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html
+      lang="uz"
+      className={`${inter.variable} ${jetbrainsMono.variable} ${sourceSerifPro.variable} ${ibmPlexSans.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="font-sans antialiased relative">
+        <ProfessionalBackground />
+        <div className="relative z-10">
+          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+        </div>
+      </body>
+    </html>
+  )
+}
