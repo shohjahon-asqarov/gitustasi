@@ -138,6 +138,11 @@ Help improve documentation by:
 3. Address feedback and make requested changes
 4. Once approved, your changes will be merged
 
+## Organization Repository
+
+This project is also maintained by [iTechUz](https://github.com/iTechUz) organization:
+**[https://github.com/iTechUz/gitustasi](https://github.com/iTechUz/gitustasi)**
+
 ## Questions?
 
 If you have questions about contributing, please:

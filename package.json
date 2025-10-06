@@ -20,6 +20,10 @@
     "type": "git",
     "url": "https://github.com/shohjahon/git-ustasi.git"
   },
+  "organization": {
+    "name": "iTechUz",
+    "url": "https://github.com/iTechUz/gitustasi"
+  },
   "homepage": "https://gitustasi.uz", 
   "bugs": {
     "url": "https://github.com/shohjahon/git-ustasi/issues"

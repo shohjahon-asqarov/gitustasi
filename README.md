@@ -104,6 +104,11 @@ Created by [Shohjahon](https://github.com/shohjahon) - A passionate developer fr
 
 **Follow me on Telegram:** [@shoxjahon_dev](https://t.me/shoxjahon_dev)
 
+## Organization Repository
+
+This project is also maintained by [iTechUz](https://github.com/iTechUz) organization:
+**[https://github.com/iTechUz/gitustasi](https://github.com/iTechUz/gitustasi)**
+
 ## Support
 
 If you find this project helpful, please consider giving it a ⭐ on GitHub!
